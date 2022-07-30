@@ -3,7 +3,7 @@
 
 (Borrowed from [here](https://github.com/skeeto/scratch/tree/master/libwinsane))
 
-Build `libwinsane.o` using `make`, then link it into any program to
+Build `libwinsane.o` using by calling `bake.cmd`, then link it into any program to
 provide some sanity on Windows. Specifically:
 
 * All command line arguments (i.e. `argv`) will be encoded with UTF-8.
