@@ -1,4 +1,4 @@
 
-gcc init.c -o init.o -c
-ld -relocatable -o libwinsane.o init.o manifest.o
-windres -o manifest.o manifest.rc
+gcc init.c -o init.obj -c %1 -nostdlib
+windres -o manifest.obj manifest.rc
+ld -relocatable -o libwinsane.obj init.obj manifest.obj
